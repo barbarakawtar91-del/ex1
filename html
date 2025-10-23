@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire QCM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Questionnaire QCM</h2>
+
+  <form id="qcmForm">
+    <p><b>Question 1 :</b> Quelle est la capitale du Maroc ?</p>
+    <input type="radio" name="Q1" value="CasaBlanca"> CasaBlanca <br>
+    <input type="radio" name="Q1" value="Agadir"> Agadir <br>
+    <input type="radio" name="Q1" value="Rabat"> Rabat <br><br>
+
+    <p><b>Question 2 :</b> Quels langages sont orientés objet ?</p>
+    <input type="radio" name="Q2" value="Phyton"> Python <br>
+    <input type="radio" name="Q2" value="language C"> Langage C <br>
+    <input type="radio" name="Q2" value="Java"> Java <br><br>
+
+    <p><b>Question 3 :</b> Quels sont des langages front-end ?</p>
+    <input type="checkbox" name="Q3" value="html"> HTML <br>
+    <input type="checkbox" name="Q3" value="CSS"> CSS <br>
+    <input type="checkbox" name="Q3" value="Javascript"> JavaScript <br><br>
+
+    <p><b>Question 4 :</b> Quels sont des navigateurs web ?</p>
+    <input type="checkbox" name="Q4" value="Google"> Google <br>
+    <input type="checkbox" name="Q4" value="Firefox"> Firefox <br>
+    <input type="checkbox" name="Q4" value="Microsoft Edge"> Microsoft Edge <br><br>
+
+    <p><b>Question 5 :</b> Quels sont des types de données en programmation ?</p>
+    <input type="checkbox" name="Q5" value="Entier (int)"> Entier (int) <br>
+    <input type="checkbox" name="Q5" value="Chaîne (string)"> Chaîne (string) <br>
+    <input type="checkbox" name="Q5" value="Booléen (boolean)"> Booléen (boolean) <br><br>
+
+    <div class="buttons">
+      <button type="button" onclick="initialiser()">Initialiser</button>
+      <button type="button" onclick="afficherCorrige()">Afficher le corrigé</button>
+      <button type="button" onclick="afficherResultat()">Afficher le résultat</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
