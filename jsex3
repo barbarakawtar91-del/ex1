@@ -1,0 +1,15 @@
+function trier(tab) {
+  return tab.sort((a, b) => a - b);
+}
+
+function afficherTri() {
+  let nombres = [7, 2, 9, 1, 5];
+
+  document.getElementById("avant").textContent =
+    "Avant tri : " + nombres;
+
+  let resultat = trier(nombres);
+
+  document.getElementById("apres").textContent =
+    "Après tri : " + resultat;
+}
