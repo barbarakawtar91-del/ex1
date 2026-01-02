@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tri d'un tableau</title>
+  <link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Tri des nombres</h2>
+
+    <button onclick="afficherTri()">Trier le tableau</button>
+
+    <p id="avant"></p>
+    <p id="apres"></p>
+  </div>
+
+  <script src="ex3.js"></script>
+</body>
+</html>
