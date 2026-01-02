@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vérification Email</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Validation Email</h2>
+
+    <input type="text" id="email" placeholder="Entrez votre email">
+    <button onclick="verifierEmail()">Vérifier</button>
+
+    <p id="resultat"></p>
+  </div>
+
+  <script src="ex2.js"></script>
+</body>
+</html>
