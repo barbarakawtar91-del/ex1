@@ -1,0 +1,14 @@
+function verifierEmail() {
+  let email = document.getElementById("email").value;
+  let resultat = document.getElementById("resultat");
+
+  let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+
+  if (regex.test(email)) {
+    resultat.textContent = "Email valide";
+    resultat.style.color = "green";
+  } else {
+    resultat.textContent = "Email invalide";
+    resultat.style.color = "red";
+  }
+}
