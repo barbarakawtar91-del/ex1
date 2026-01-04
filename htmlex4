@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4 - Somme des temps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Somme de trois temps</h2>
+
+<div class="bloc">
+    <h3>Premier temps</h3>
+    Heures <input type="number" id="h1">
+    Minutes <input type="number" id="m1">
+    Secondes <input type="number" id="s1">
+</div>
+
+<div class="bloc">
+    <h3>Deuxième temps</h3>
+    Heures <input type="number" id="h2">
+    Minutes <input type="number" id="m2">
+    Secondes <input type="number" id="s2">
+</div>
+
+<div class="bloc">
+    <h3>Troisième temps</h3>
+    Heures <input type="number" id="h3">
+    Minutes <input type="number" id="m3">
+    Secondes <input type="number" id="s3">
+</div>
+
+<button onclick="calculer()">Somme</button>
+<button onclick="effacer()">Effacer</button>
+
+<h3>Résultat</h3>
+<p>
+    Jours: <span id="j"></span> |
+    Heures: <span id="h"></span> |
+    Minutes: <span id="m"></span> |
+    Secondes: <span id="s"></span>
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
