@@ -1,0 +1,40 @@
+function calculer() {
+    let h1 = Number(document.getElementById("h1").value);
+    let m1 = Number(document.getElementById("m1").value);
+    let s1 = Number(document.getElementById("s1").value);
+
+    let h2 = Number(document.getElementById("h2").value);
+    let m2 = Number(document.getElementById("m2").value);
+    let s2 = Number(document.getElementById("s2").value);
+
+    let h3 = Number(document.getElementById("h3").value);
+    let m3 = Number(document.getElementById("m3").value);
+    let s3 = Number(document.getElementById("s3").value);
+
+    let totalSecondes =
+        s1 + s2 + s3 +
+        (m1 + m2 + m3) * 60 +
+        (h1 + h2 + h3) * 3600;
+
+    let jours = Math.floor(totalSecondes / 86400);
+    totalSecondes %= 86400;
+
+    let heures = Math.floor(totalSecondes / 3600);
+    totalSecondes %= 3600;
+
+    let minutes = Math.floor(totalSecondes / 60);
+    let secondes = totalSecondes % 60;
+
+    document.getElementById("j").innerText = jours;
+    document.getElementById("h").innerText = heures;
+    document.getElementById("m").innerText = minutes;
+    document.getElementById("s").innerText = secondes;
+}
+
+function effacer() {
+    document.querySelectorAll("input").forEach(input => input.value = "");
+    document.getElementById("j").innerText = "";
+    document.getElementById("h").innerText = "";
+    document.getElementById("m").innerText = "";
+    document.getElementById("s").innerText = "";
+}
